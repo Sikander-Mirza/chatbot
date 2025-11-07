@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Send, Sparkles, Bot, User } from "lucide-react";
 import "./chatbot.css"
 
-const API_KEY = "AIzaSyDwXU4veLu6cS6hxrqX0xL6KDVwmCrHx3U";
+const API_KEY = import.meta.env.VITE_GOOGLE_API;
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
